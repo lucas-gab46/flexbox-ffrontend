@@ -1,0 +1,186 @@
+.container, h1, h2, h3 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: blue;
+}
+
+.container {
+    background-color: aquamarine;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: green;
+}
+
+h3 {
+    color: fuchsia;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+.wrap {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 50px;
+    width: 100px;
+    border: 1px solid red;
+    margin-bottom: 10px;
+}
+
+.center,
+.space-around,
+.space-between,
+.end,
+.align-center,
+.flex-end,
+.stretch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border: 1px solid gold;
+    margin-bottom: 20px;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.end {
+    justify-content: flex-end;
+}
+
+.align-center,
+.flex-end,
+.stretch {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.align-center .box,
+.flex-end .box,
+.stretch .box {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border: 1px solid green;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.stretch {
+    align-items: stretch;
+}
+
+.stretch .box {
+    height: auto;
+}
+
+.gap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid green;
+}
+
+.order {
+    display: flex;
+    }
+
+#one {
+order: 1;
+}
+
+#two {
+order: 2;
+}
+
+#three {
+order: 3;
+}
+
+.grow{
+display: flex;
+}
+.grow .box{
+  flex: 1;
+    }
+
+.grow .big{
+flex: 5;
+}
+
+.basis{
+display: flex;
+}
+
+.basis .box{
+flex-basis: 20px;
+}
+
+.basis .big{
+flex-grow: 1;
+}
+
+.shrink{
+display: flex;
+}
+
+.shrink .box{
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: 250px;
+width: auto;
+}
+
+.shrink .small{
+flex-shrink: 2;
+}
+
+.shorthand .box{
+display: flex;
+}
+
+.shorthand .box{
+width: auto;
+flex: 1 1 50px;
+}
+
+.shorthand .different{
+flex: 3 1 400px;
+}
+
+.auto-alignment{
+height: 300px;
+display: flex;
+align-items: flex-end;
+border: 1px solid purple;
+}
+
+.auto-alignment .different{
+align-self: center;
+}
+
